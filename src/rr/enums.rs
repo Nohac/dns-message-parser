@@ -14,14 +14,15 @@ try_from_enum_to_integer! {
     /// [resource records]: crate::rr::RR
     #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
     pub enum Class {
-        /// The Internet class.
         IN = 1,
-        /// The CSNET class. (obsolete)
         CS = 2,
-        /// The CHAOS class.
         CH = 3,
-        /// The Hesiod class.
         HS = 4,
+        // Add support for Unique RRSet
+        UNIQUE_IN = 0x8001,
+        UNIQUE_CS = 0x8002,
+        UNIQUE_CH = 0x8003,
+        UNIQUE_HS = 0x8004,
     }
 }
 

@@ -151,6 +151,13 @@ try_from_enum_to_integer! {
         HS = 4,
         NONE = 254,
         ANY = 255,
+        // Add support for QU (Unicast Response Preferred)
+        QU_IN = 0x8001,
+        QU_CS = 0x8002,
+        QU_CH = 0x8003,
+        QU_HS = 0x8004,
+        QU_NONE = 0x80FE,
+        QU_ANY = 0x80FF,
     }
 }
 
